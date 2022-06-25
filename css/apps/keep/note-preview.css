@@ -1,0 +1,722 @@
+.note-preview {
+    display: flex;
+    text-align: center;
+    border: 2px solid rgb(221, 220, 217);
+    border-radius: 10px;
+    padding: 10px;
+    font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif !important;
+    break-inside: avoid;
+    align-items: center;
+    justify-content: center;
+    min-width: 150px;
+    min-height: 100px;
+}
+
+
+.note-preview h1 {
+    font-size: 1.1rem;
+}
+
+.add-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.note-details {
+    display: flex;
+}
+
+.note-details h1 {
+    font-size: 1.3rem;
+}
+
+.note-details h2 {
+    font-size: 1.2rem;
+    font-weight: unset;
+}
+
+.note-list {
+    display: inline-block;
+    max-width: 1200px;
+    padding: 50px;
+    columns: 4;
+    height: 100%;
+}
+
+.note-list li {
+    margin-bottom: 10px;
+
+}
+
+.todos-container li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.note-text {
+    padding: 10px;
+}
+
+.note-preview img {
+    object-fit: fill;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.edit-input-btns {
+    display: flex;
+}
+
+.edit-input-btns img {
+    cursor: pointer;
+}
+
+div.tool-bar-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    margin-top: 10px;
+}
+
+.tool-bar-btns img {
+    display: flex;
+    cursor: pointer;
+    width: unset !important;
+}
+
+.notes-filter-input {
+    display: flex;
+    height: 30px;
+    width: 600px;
+    margin-right: 50px;
+    padding: 15px;
+    align-items: center;
+    justify-content: start;
+    background-color: rgb(241, 243, 244);
+    border: 2px solid rgb(239, 238, 236);
+    border-radius: 10px;
+    gap: 10px;
+    box-shadow: 1px 6px 15px -2px rgba(0, 0, 0, 0.18)
+}
+
+.notes-filter-input img {
+    width: 25px;
+    cursor: pointer;
+}
+
+.search-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+}
+
+.search-icon:hover {
+    background-color: rgb(211, 212, 214);
+    /* padding: 7px; */
+    transition: 0.8s;
+    border-radius: 50px;
+}
+
+.notes-filter-input input {
+    border: none;
+    background-color: rgb(241, 243, 244);
+    width: 400px;
+    font-size: 1.3rem;
+    color: grey;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+}
+
+.notes-filter-input:focus,
+textarea:focus,
+select:focus {
+    background-color: white;
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+    font-family: PT-sans-regular;
+    font-size: 1.2rem;
+    gap: 5px;
+}
+
+.select-filters {
+    border: 2px solid rgb(219, 219, 217);
+    border-radius: 5px;
+    padding: 10px;
+    width: 630px;
+}
+
+.keep-header-layout {
+    border-bottom: 2px solid rgb(219, 219, 217);
+    padding: 25px 20px 25px 20px;
+}
+
+
+.keep-img-header {
+    width: 70px;
+}
+
+.keep-img-nav {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+
+.keep-logo {
+    font-family: PT-sans-regular;
+    font-size: 1.9rem;
+    color: rgb(95, 99, 104);
+    font-size: 27px;
+    line-height: 24px;
+    vertical-align: middle;
+    top: -1.5px;
+    font-weight: bold;
+}
+
+.keep-img-nav-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+
+.keep-img-nav-div:hover {
+    background-color: rgb(211, 212, 214);
+    transition: 0.8s;
+    border-radius: 50px;
+}
+
+.notes-menu-icon {
+    width: 35px;
+    /* opacity: 0.6; */
+    cursor: pointer;
+}
+
+.notes-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+
+.notes-menu:hover {
+    background-color: rgb(211, 212, 214);
+    transition: 0.8s;
+    border-radius: 50px;
+}
+
+.notes-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+}
+
+.notes-avatar-img {
+    width: 55px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.input-container {
+    display: flex;
+    height: 40px;
+    width: 650px;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(239, 238, 236);
+    border-radius: 10px;
+    gap: 30px;
+    box-shadow: 1px 6px 15px -2px rgba(0, 0, 0, 0.18)
+}
+
+.input-container input {
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+
+}
+
+.all-add-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.edit-input-btns {
+    gap: 10px;
+}
+
+.edit-input-btns img {
+    gap: 10px;
+    opacity: 0.7;
+    width: 30px;
+}
+
+.note-add-delete-btns {
+    display: flex;
+    width: 120px;
+    flex-direction: row;
+    justify-content: end;
+    gap: 35px;
+    margin-bottom: 5px;
+}
+
+.note-add-delete-btns button {
+    border: none;
+    padding: 5px;
+    gap: 10px;
+    border-radius: 4px;
+    font-size: 1.3rem;
+    font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif !important;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.note-add-delete-btns button:hover {
+    background-color: rgb(241, 243, 244);
+    transition: 0.5s;
+}
+
+.toolbar-note-preview {
+    margin: auto;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.toolbar-note-preview.onToolBar {
+    opacity: 1;
+}
+
+.note-preview:hover {
+    box-shadow: 0px 4px 5px -1px rgba(0, 0, 0, 0.32);
+
+}
+
+.remove-note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 30px;
+}
+
+.remove-note img {
+    opacity: 0.7;
+}
+
+.remove-note:hover {
+    background-color: rgb(211, 212, 214);
+    transition: 0.4s;
+    border-radius: 50px
+}
+
+.change-color-note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 30px;
+}
+
+.change-color-note:hover {
+    background-color: rgb(211, 212, 214);
+    transition: 0.4s;
+    border-radius: 50px
+}
+
+.duplicate-note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 30px;
+}
+
+.duplicate-note:hover {
+    background-color: rgb(211, 212, 214);
+    transition: 0.4s;
+    border-radius: 50px
+}
+
+.mail-note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 30px;
+}
+
+.mail-note:hover {
+    background-color: rgb(211, 212, 214);
+    transition: 0.4s;
+    border-radius: 50px
+}
+
+.pin-note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 30px;
+}
+
+.pin-note:hover {
+    background-color: rgb(211, 212, 214);
+    transition: 0.4s;
+    border-radius: 50px
+}
+
+.change-color-note img {
+    opacity: 0.7;
+}
+
+.duplicate-note img {
+    opacity: 0.7;
+}
+
+.mail-note img {
+    opacity: 0.7;
+}
+
+.pin-note img {
+    opacity: 0.7;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+}
+
+.insert-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+}
+
+.insert-todos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    margin-right: 20px;
+}
+
+.color-palette {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+}
+
+.text-note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+}
+
+.insert-img:hover {
+    background-color: rgb(211, 212, 214);
+    transition: 0.4s;
+    border-radius: 50px;
+}
+
+.text-note:hover {
+    background-color: rgb(211, 212, 214);
+    transition: 0.4s;
+    border-radius: 50px;
+}
+
+.color-palette:hover {
+    background-color: rgb(211, 212, 214);
+    transition: 0.4s;
+    border-radius: 50px;
+}
+
+.insert-todos:hover {
+    background-color: rgb(211, 212, 214);
+    transition: 0.5s;
+    border-radius: 50px;
+}
+
+section.note-preview:first-child {
+    margin-bottom: 15px;
+}
+
+.drop-down-colors {
+    display: flex;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.drop-down-colors img {
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.slide-fade-enter-active {
+    transition: all 0.3s ease-out;
+}
+
+.slide-fade-leave-active {
+    transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+    transform: translateX(20px);
+    opacity: 0;
+}
+
+.bounce-enter-active {
+    animation: bounce-in 0.5s;
+}
+
+.bounce-leave-active {
+    animation: bounce-in 0.5s reverse;
+}
+
+@keyframes bounce-in {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1.25);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.check-box-input {
+    background-size: 18px 18px;
+    height: 18px;
+    opacity: 0.54;
+    outline: none;
+    top: 5px;
+    width: 18px;
+    margin-right: 8px;
+
+}
+
+.pinned-notes-logo {
+    padding-top: 60px;
+    font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif !important;
+    text-align: left;
+    margin-left: 100px;
+    font-size: 1.3rem;
+}
+
+.user-note-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.user-note-inputs i {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.note-edit-container {
+    position: fixed;
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 50;
+    box-shadow: 5px 5px 400px 400px rgba(0, 0, 0, 0.36);
+}
+
+.edit-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.edit-container label {
+    font-size: 1.9rem;
+}
+
+.edit-container input {
+    padding: 6px;
+    border-radius: 5px;
+    border: 2px solid rgb(239, 238, 236);
+    font-size: 1.2rem;
+}
+
+.note-todos-edit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.edit-close-btn {
+    display: flex;
+    width: 100px;
+    flex-direction: row;
+    justify-content: center;
+    gap: 35px;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1.2rem;
+
+}
+
+.note-info {
+    cursor: pointer;
+}
+
+.checked {
+    text-decoration: line-through;
+}
+
+.focus-on {
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+    background-color: #fff;
+}
+
+.focus-off {
+    background-color: var(--gray-light);
+}
+
+@media (max-width: 1300px) {
+    .note-list {
+        columns: 3;
+    }
+
+    .notes-filter-input {
+        width: 400px;
+    }
+
+    .select-filters {
+        width: 440px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .note-list {
+        columns: 2;
+    }
+
+    .notes-filter-input {
+        width: 300px;
+    }
+
+    .select-filters {
+        width: 340px;
+    }
+
+    .notes-nav {
+        gap: unset !important;
+    }
+}
+
+@media (max-width: 850px) {
+    .note-list {
+        columns: 1;
+    }
+
+    .notes-filter-input {
+        width: 280px;
+        height: 20px !important;
+        margin-right: unset;
+    }
+
+    .select-filters {
+        width: 310px;
+    }
+
+    .keep-header-layout {
+        gap: 10px;
+        justify-content: center !important;
+        gap: 20px;
+    }
+
+    .keep-logo {
+        display: none;
+    }
+
+    .left-side-menu img {
+        display: none;
+    }
+
+    .left-side-menu {
+        display: none !important;
+    }
+
+    .keep-img-header {
+        display: none !important;
+    }
+
+    .input-container {
+        width: 250px;
+        flex-direction: column;
+        height: 180px !important;
+    }
+
+    .keep-main-layout {
+        width: unset !important;
+    }
+
+    .note-preview {
+        width: 280px;
+    }
+
+    .add-form {
+        width: unset !important;
+    }
+
+    .search-icon:hover {
+        background-color: rgb(241, 243, 244);
+    }
+}

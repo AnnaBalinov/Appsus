@@ -1,0 +1,98 @@
+.compose-trash-bar {
+  height: 82px;
+  display: flex;
+  align-items: center;
+}
+
+.trash {
+  height: 37px;
+  width: 37px;
+  cursor: pointer;
+  margin-left: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.compose-trash-bar img {
+  height: 24px;
+  width: 24px;
+}
+
+.trash:hover {
+  background-color: rgb(211, 212, 214);
+  transition: 0.1s;
+  border-radius: 50%;
+}
+
+.star {
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+}
+
+.add {
+  height: 35px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-compose {
+  cursor: pointer;
+  padding: 5px 25px 5px 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+  border-radius: 30px;
+  font-family: Roboto, RobotoDraft, Arial, sans-serif;
+  margin: 25px 0 10px 30px;
+  color: #212225;
+}
+.btn-compose:hover {
+  box-shadow: 0 1px 3px 0 rgb(60 64 67 / 30%), 0 4px 8px 3px rgb(60 64 67 / 15%);
+  background-color: #fafafb;
+}
+
+.icon {
+  height: 35px;
+  width: 35px;
+}
+/* .icon:hover {
+  background-color: rgb(211, 212, 214);
+  transition: 0.1s;
+  border-radius: 50%;
+} */
+
+@media (max-width: 1150px) {
+  .trash {
+    margin-left: auto;
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 405px) {
+  .compose-trash-bar {
+    width: 250px;
+  }
+}
+
+@media (max-width: 380px) {
+  .trash {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 300px) {
+  .trash {
+    margin-left: 10px;
+  }
+  .compose-trash-bar {
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+}

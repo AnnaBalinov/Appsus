@@ -1,0 +1,64 @@
+.mails-folders {
+  /* width: 256px; */
+  margin-left: 30px;
+  color: var(--black-txt);
+  font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+}
+
+.mails-folders ul {
+  padding: 0 0 0 0;
+}
+
+.mails-folders li {
+  height: 35px;
+  width: 200px;
+  min-width: 50px;
+  cursor: pointer;
+  border-radius: 0 50px 50px 0;
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 0;
+  gap: 20px;
+}
+.mails-folders li:hover {
+  background-color: var(--gray-light);
+}
+
+.inbox-folder small {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.mails-folders img {
+  width: 24px;
+  height: 24px;
+}
+.mails-folders div {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* .mails-folders div:hover {
+  background-color: rgb(211, 212, 214);
+  transition: 0.1s;
+  border-radius: 50%;
+} */
+
+.selected-folder {
+  background-color: #fcc5bf;
+  color: var(--red-dark);
+}
+
+@media (max-width: 1150px) {
+  .mails-folders li{
+    width: 100%;
+  }
+}
+
+@media (max-width: 405px) {
+  .mails-folders li{
+    width: 250px;
+  }
+}
